@@ -1,0 +1,209 @@
+
+body{
+    margin: 0;
+    
+    font-family: cursive;
+
+}
+p, blockquote{
+    font-size: medium;
+    line-height: 1.6em;
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    text-align: center;
+    padding: .8em;
+}
+
+.logo{
+    width: 130px;
+}
+
+.hid-mobile{
+    display: none;
+}
+.server{
+    width: 70%;
+    margin: 2em auto 2;
+}
+h1, .subhead{
+    position: relative;
+    z-index: 3;
+
+}
+.subhead{
+    font-size: 1.em;
+}
+.blue-container{
+    width: 100%;
+    background: #00c2FF;
+    color: white;
+    margin: 15% 0 0;
+    padding: 4em 0 0;
+    border-top-left-radius: 40px;
+    transform:  skewY(-2deg);
+}
+.blue-container ul{
+    transform: skewY(2deg);
+
+}
+
+.blue-container ul li{
+    margin-bottom: 3em;
+}
+
+.blue-container ul li p{
+    padding: 0 .5em;
+}
+
+.calan{
+    width: 14%;
+
+}
+
+.user{
+    width: 10%;
+
+}
+
+.grey-container{
+    background: grey;
+    padding:  4em 0 2em;
+    margin-top: -3%;
+
+}
+.grey-container ul li :first-child{
+    margin-bottom: 2em;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+figcaption{
+    font-weight: bold;
+    color: indigo;
+}
+h2{
+    margin: 7%;
+}
+.cta{
+    background: greenyellow;
+    width: calc(100% - 1em);
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+.footer-container{
+    width: 100%;
+    background:powderblue;
+    color: seashell;
+    padding: 0;
+    border-top-right-radius:40px;
+    transform: skewY(2deg)
+}
+ul.footer-link{
+    margin: 0 auto;
+
+}
+ul.footer-link li{
+    display: inline-block;
+}
+nav ul{
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(34,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(150, 97, 94);
+}
+
+nav ul li a:hover{
+    background-color: rgb(99, 150, 94);
+
+}
+
+@media only screen and (min-width:600px){
+    .server{
+        width: 50%;
+    }
+    h1{
+        font-size: 3em;
+        margin: 0;
+    }
+    .subhead{
+        font-size: 1em;
+        margin-bottom: 12%;
+    }
+    .blue-container{
+        margin: 0;
+    }
+.blue-container calan{
+    width: 10%;
+}
+blue-container ul li{
+    width: 5%;
+}
+}
+.blue-container ul{
+    display: flex;
+    align-items: center;
+}
+.grey-container ul{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (min-width:1024px){
+    cta{
+        width: 10%;
+
+    }
+    }
+    .show-desktop{
+        display: block;
+}
+.hid-desktop{
+    display: none;
+    
+
+    }
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+
+    }
+    nav ul li{
+        float: left;
+        
+    }
+
+    nav ul li a{
+        color: black;
+        background-color:  inherit;
+        text-align: right;
+
+    }

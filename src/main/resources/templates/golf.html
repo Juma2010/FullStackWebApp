@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Player Tracking System</title>
+</head>
+<a th:href="@{sport}">Next page</a>
+
+<body>
+
+
+
+
+<div>
+
+<h1> welcome to my web site, how can we help you today</h1>
+
+<p>   Ahead, a guide to the ultimate, summer-friendly menu featuring sardines.
+5b5f3da51ffbe339b87ebc56-h1000_bvk1lw.jpg
+
+The health benefits of sardines are abundant—rich in nutrients and loaded with vitamins, the list is chockful of essentials such as Omega-3s, potassium, and more. Given the versatility of sardines—which, more often than not come packed in olive oil—you will find it easy to pair them with a diverse scope of dishes. Smoked sardines packed in a spicy chili sauce or with roasted tomatoes are ideal for those looking to embrace an additional range of flavors. 
+
+Tomatoes are a mainstay when it comes to said pairings—as the acidity of the fruit provides a refined complement to the delicate flavors of the fish—with butter standing in as another equally elemental component. Paired together, you’ll find yourself left with a dynamic combo that is filling and light. 
+5b5f3da5cb934a39b1f3cc63-h1000_gtn3ya.jpg
+Oven-Roasted Garlic-Chili Tomatoes
+
+These roasted chili-tomatoes will complement a wide scope of flavor profiles, doubling as the ideal side for the recipes ahead. Aside from sardines, they can be enjoyed on toast, scattered onto a cheeseboard, or atop your go-to pasta recipe. The possibilities are endless!
+
+    2 cups heirloom tomatoes
+    4 red chili peppers
+    1/2 head of garlic
+    1 tablespoon olive oil
+    Sea salt
+
+Preheat the oven to 375F. Place the tomatoes, red chili peppers, and garlic in an oven-proof baking dish and drizzle on top with the olive oil. Sprinkle with a dash of sea salt and roast for 20-25 minutes. Set aside to cool.  </p>
+
+<a th:href="@{golf}"> golf</a>
+<a th:href="@{sport}">FootBall</a>
+
+
+<div align="center">
+<h1>List Player</h1>
+<table border="1" class="styled">
+<thead>
+<tr>
+<th>Name</th>
+<th>Sport</th>
+<th>City</th>
+<th>Club</th>
+<th>Fee</th>
+</tr>
+
+</thead>
+<tbody>
+<tr th:Each="player : ${listPLayers}">
+<td th:text="${player.name}"></td>
+<td th:text="${player.sport}"></td>
+<td th:text="${player.city}"></td>
+<td th:text="${player.club}"></td>
+<td th:text="${player.fee}"></td>
+
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+
+<img 
+th:src="@{/images/three.jpg}">
+
+</div>
+
+</body>
+</html>

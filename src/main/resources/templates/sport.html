@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>sport for all </title>
+<title>Pure CSS Drop Down Menu</title>
+
+<style type="text/css">
+body,td,th {
+font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+margin:0;
+padding:0;
+}
+#menu {
+list-style: none;	
+}
+#menu li a {display: block; border: 1px solid #eee;}
+.dc{
+float:left;
+position: relative;
+z-index: 0;
+margin:0;
+padding:0;
+}
+.dc:hover{
+background-color: transparent;
+z-index: 50;
+}
+.dc ul{
+position: absolute;
+width:120px;
+/*background-color: #999;*/
+left: -1000px;
+list-style-type:none;
+visibility: hidden;
+}
+.dc:hover ul{
+visibility: visible;
+top: 24px;
+left:0px;
+}
+/* -------------------- What the list items will look like inside the dropdown ---------------------- */
+.dc, .dc ul li{
+margin:0;
+padding:0;
+background-color: #EBEBEB;
+margin:1px;
+}
+.dc:hover, .dc ul li:hover {
+background-color: #FFF;
+margin:1px;
+}
+/* -------------------- What the links look like inside the dropdown ---------------------- */
+.dc a, .dc ul li a {
+display:block;
+padding:4px;
+font-size:12px;
+}
+.dc a:link, .dc ul li a:link {
+color: #343434;
+text-decoration: none;
+}
+.dc ul li a:visited {
+text-decoration: none;
+color: #000;
+}
+.dc ul li a:hover {
+text-decoration: none;
+color: #333;
+}
+.dc ul li a:active {
+text-decoration: none;
+color: #343434;
+}
+/* END PURE CSS DROP MENU */
+</style>
+</head>
+<body>
+<ul id="menu">
+<li class="dc"><a href="#">Home</a>
+<ul>
+<li><a href="#">sport</a></li>
+<li><a href="#">rate</a></li>
+<li><a href="#">course</a></li>
+<li><a href="#">group</a></li>
+<li><a href="#">outing</a></li>
+</ul>
+</li>
+
+<li class="dc"><a href="#">membership</a>
+<ul>
+<li><a href="#">member</a></li>
+<li><a href="#">membership fee</a></li>
+<li><a href="#">guest</a></li>
+</ul>
+</li>
+</ul>
+
+<li class="dc"><a href="#">people</a>
+<ul>
+<li><a href="#"></a>address</li>
+<li><a href="#">city</a></li>
+<li><a href="#">location</a></li>
+</ul>
+
+
+<a th:href="@{golf}">golf</a>
+</body>
+</html>
+
+
+</div>
+
+</body>
+</html>
+
+
